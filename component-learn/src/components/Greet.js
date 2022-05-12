@@ -1,5 +1,13 @@
 import React from "react";
 
-let Greet = () => <h1>Welcome to simform</h1>;
-
+const Greet = (props) => {
+  console.log(props);
+  return (
+    <div>
+      <h1>
+        Hello {props.name} also known as {props.locationName}
+      </h1>
+    </div>
+  );
+};
 export default Greet;
