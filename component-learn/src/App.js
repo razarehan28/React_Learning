@@ -1,13 +1,20 @@
 import React, { Component } from "react";
-import PureComp from "./components/PureComp";
-import RegComp from "./components/RegComp";
-import ParentComp from "./PureComponent/ParentComp";
+import EventBind from "./EventHandling/EventBind";
+import ClassClick from "./EventHandling/ClassClick";
+import FunctionClick from "./EventHandling/FunctionClick";
+import Message from "./components/Message";
+import UserGreeting from "./ConditionalRendering/UserGreeting";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <ParentComp />
+        {/* <ParentComp /> */}
+        {/* <FunctionClick />
+        <ClassClick />
+        <EventBind />
+        <Message /> */}
+        <UserGreeting />
       </div>
     );
   }
