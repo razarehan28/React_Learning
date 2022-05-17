@@ -6,6 +6,7 @@ import Message from "./components/Message";
 import UserGreeting from "./ConditionalRendering/UserGreeting";
 import NameList from "./Listandkeys/NameList";
 import LifecycleA from "./components/LifecycleA";
+import Form from "./Forms/Form";
 
 class App extends Component {
   render() {
@@ -17,8 +18,8 @@ class App extends Component {
         <EventBind />
         <Message /> */}
         {/* <UserGreeting /> */}
-        <NameList />
-     
+        {/* <NameList /> */}
+      <Form/>
       </div>
     );
   }
