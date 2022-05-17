@@ -4,6 +4,8 @@ import ClassClick from "./EventHandling/ClassClick";
 import FunctionClick from "./EventHandling/FunctionClick";
 import Message from "./components/Message";
 import UserGreeting from "./ConditionalRendering/UserGreeting";
+import NameList from "./Listandkeys/NameList";
+import LifecycleA from "./components/LifecycleA";
 
 class App extends Component {
   render() {
@@ -14,7 +16,9 @@ class App extends Component {
         <ClassClick />
         <EventBind />
         <Message /> */}
-        <UserGreeting />
+        {/* <UserGreeting /> */}
+        <NameList />
+     
       </div>
     );
   }
