@@ -1,3 +1,5 @@
+import {createStore} from 'redux'
+import reducer from '/reducer/reducer'
 const redux = require("redux");
 const createStore = redux.createStore;
 
@@ -28,7 +30,7 @@ const reducer = (state = initialState, action) => {
   }
 };
 // store in Redux
-const store = createStore(reducer);
+const store = createStore (reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 console.log("initialState", store.getState()); // initialState
 const unsubscribe = store.subscribe(() =>
   console.log("Updated state", store.getState())
