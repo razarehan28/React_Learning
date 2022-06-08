@@ -1,13 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CakeContainer from "./components/CakeContainer";
+import store from "./redux/store";
+import { Provider } from "react-redux";
+import HooksCakeContainer from "./components/HooksCakeContainer";
+import IceCreamContainer from "./components/IceCreamContainer";
+import NewCakeContainer from "./components/NewCakeContainer";
 
 function App() {
   return (
-    <div className="App">
-      <a className="quantity_minus" title='Decrement'><span> - </span></a>
-      <input name="quantity" type="text"></input>
-      <a className="quantity_plus" title='Increment'><span> + </span></a>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <HooksCakeContainer />
+        <CakeContainer />;
+        <IceCreamContainer />
+        <NewCakeContainer />
+      </div>
+    </Provider>
   );
 }
 
