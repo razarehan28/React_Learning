@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import cakeReducer from "./cake/Reducers/cakeReducers";
-import IceCreamReducer from "./IceCream/Reducers/iceCreamReducers";
+import cakeReducer from "./cakeReducers";
+import IceCreamReducer from "./IceCreamReducers";
 
 const RootReducers = combineReducers({
   cake:cakeReducer,

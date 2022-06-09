@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-// import { buycake } from "./redux/cake/cakeAction";
+
 import {buyCake} from '../redux'
 
 function CakeContainer(props) {
@@ -13,7 +13,7 @@ function CakeContainer(props) {
 }
 const mapStateToProps = (state) => {
   return {
-    numOfCakes: state.cake.numOfCakes,
+    numOfCakes: state.numOfCakes,
   };
 };
 const mapDispatchToProps = (dispatch) => {
